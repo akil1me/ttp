@@ -12,7 +12,7 @@ export const Hero: React.FC = () => {
   const [index, setIndex] = useState<number>(1);
 
   const slides = Array.from({ length: 8 }).map(
-    (el, index) => `Slide ${index + 1}`
+    (_, index) => `Slide ${index + 1}`
   );
 
   return (

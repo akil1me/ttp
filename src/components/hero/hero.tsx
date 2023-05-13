@@ -1,12 +1,12 @@
 import { useState } from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import pepsi from "../../assets/images/pepsi-logo.png";
 import { Container } from "../container";
 import { LinkButton } from "../link-button";
-import pepsi from "../../assets/images/pepsi-logo.png";
 
-import "./hero.scss";
 import "swiper/css";
 import { SwiperButtons } from "../swiper-buttons";
+import "./hero.scss";
 
 export const Hero: React.FC = () => {
   const [index, setIndex] = useState<number>(1);

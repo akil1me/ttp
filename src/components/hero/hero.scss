@@ -1,0 +1,139 @@
+.hero {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 162px;
+
+  @media only screen and (max-width: 548px) {
+    margin-bottom: 62px;
+  }
+
+  &__title {
+    position: relative;
+    z-index: 4;
+    max-width: 1027px;
+    margin-bottom: 30px;
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 110px;
+    line-height: 120px;
+    text-transform: uppercase;
+    @media only screen and (max-width: 1264px) {
+      max-width: 678px;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      font-size: 60px;
+      line-height: 70px;
+    }
+
+    @media only screen and (max-width: 548px) {
+      font-size: 36px;
+      line-height: 46px;
+      margin-bottom: 200px;
+    }
+  }
+
+  &__text {
+    max-width: 932px;
+    margin-top: 200px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+    @media only screen and (max-width: 1264px) {
+      max-width: 527px;
+    }
+    @media only screen and (max-width: 1000px) {
+      margin-top: 106px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    @media only screen and (max-width: 750px) {
+      max-width: 300px;
+    }
+    @media only screen and (max-width: 548px) {
+      margin-top: 44px;
+    }
+  }
+}
+
+.hero-carulsel {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  bottom: 0;
+  width: 640px;
+  height: 640px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 3;
+  @media only screen and (max-width: 1000px) {
+    right: 0;
+    top: 60px;
+    width: 340px;
+    height: 340px;
+  }
+  @media only screen and (max-width: 548px) {
+    margin: 0;
+    width: 220px;
+    height: 220px;
+  }
+
+  &__img {
+    @media only screen and (max-width: 1000px) {
+      width: 256px !important;
+    }
+    @media only screen and (max-width: 548px) {
+      width: 188px !important;
+    }
+  }
+
+  &__swiper {
+    width: 500px !important;
+    @media only screen and (max-width: 1000px) {
+      width: 256px !important;
+    }
+    @media only screen and (max-width: 548px) {
+      width: 188px !important;
+    }
+  }
+
+  &__buttons {
+    @media only screen and (max-width: 1000px) {
+      bottom: 25px !important;
+    }
+    @media only screen and (max-width: 548px) {
+      bottom: 5px !important;
+    }
+  }
+  &__buttons-img {
+    @media only screen and (max-width: 1000px) {
+      width: 24px;
+      height: 24px;
+    }
+    @media only screen and (max-width: 548px) {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__number {
+    margin: 0 40px;
+    font-size: 24px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.616);
+    @media only screen and (max-width: 1000px) {
+      font-size: 18px;
+    }
+    @media only screen and (max-width: 548px) {
+      font-size: 12px;
+      margin: 0 10px;
+    }
+    & > span {
+      color: #000;
+    }
+  }
+}

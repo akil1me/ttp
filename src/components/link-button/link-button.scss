@@ -1,0 +1,45 @@
+.link-button {
+  position: relative;
+  padding: 19px 26px;
+  background-color: #ffffff;
+  border-radius: 60px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+
+  &__text {
+    position: relative;
+    z-index: 2;
+  }
+
+  &:hover {
+    color: #ffffff;
+  }
+  &:hover::before {
+    right: 0;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    margin: auto;
+    transition: 0.4s ease;
+    background-color: #000;
+    border-radius: 60px;
+    content: "";
+  }
+
+  @media only screen and (max-width: 1000px) {
+    padding: 15px 24px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  @media only screen and (max-width: 548px) {
+    padding: 13px 22px;
+    font-size: 11px;
+    line-height: 13px;
+  }
+}

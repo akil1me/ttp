@@ -1,0 +1,173 @@
+.contacts {
+  margin-bottom: 120px;
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 36px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__content + &__content {
+    margin-left: 20px;
+  }
+  &__content {
+    width: 100%;
+    max-width: 710px;
+    height: 435px;
+    padding: 59px 80px 64px 70px;
+    background-color: #fff;
+
+    &-title {
+      margin-bottom: 21px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.8);
+    }
+
+    &-title2 {
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 497px;
+    }
+  }
+}
+
+.contact {
+  margin-bottom: 10px;
+
+  &__title {
+    margin-bottom: 3px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 26px;
+    color: #004cca;
+  }
+
+  &__link {
+    word-break: break-all;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+.icons {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  &__item {
+    transition: 0.3s ease;
+  }
+  &__item:hover {
+    opacity: 0.7;
+  }
+  &__item + &__item {
+    margin-left: 30px;
+  }
+}
+
+.contacts__inputs {
+  width: 100%;
+  padding: 17px 19px;
+  background-color: #f4f3f3;
+  outline-color: #004cca;
+}
+.contacts__inputs::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.contacts__textarea {
+  height: 136px;
+  resize: none;
+  margin-bottom: 24px;
+}
+.contacts__button {
+  font-size: 30px;
+  width: 80px;
+  height: 70px;
+  color: #fff;
+  background-color: #004cca;
+}
+
+@media only screen and (max-width: 963px) {
+  .contacts {
+    margin-bottom: 79px;
+
+    &__inner {
+      flex-direction: column;
+    }
+    &__content + &__content {
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 548px) {
+  .contacts {
+    margin-bottom: 61px;
+
+    &__title {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    &__content + &__content {
+      margin-top: 10px;
+    }
+
+    &__content {
+      height: 400px;
+      padding: 40px 20px;
+
+      &-title {
+        margin-bottom: 24px;
+        font-size: 14px;
+        line-height: 36px;
+      }
+
+      &-title2 {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+  .contact {
+    margin-bottom: 20px;
+
+    &__title {
+      margin-bottom: 8px;
+      font-size: 11px;
+      line-height: 14px;
+    }
+
+    &__link {
+      font-size: 13px;
+      line-height: 16px;
+    }
+  }
+
+  .contacts__inputs {
+    padding: 13px 19px;
+  }
+  .contacts__button {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width: 323px) {
+  .contacts {
+    &__content {
+      height: auto;
+    }
+  }
+}

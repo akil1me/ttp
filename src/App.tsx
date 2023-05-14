@@ -2,6 +2,8 @@ import "./app.scss";
 import {
   AboutUs,
   Category,
+  Contacts,
+  Footer,
   Header,
   Hero,
   Partners,
@@ -20,7 +22,9 @@ const App = () => {
         <PopularProducts />
         <ProdusctsLife />
         <Partners />
+        <Contacts />
       </main>
+      <Footer />
     </>
   );
 };

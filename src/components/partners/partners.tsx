@@ -4,7 +4,7 @@ import "./partners.scss";
 
 export const Partners: React.FC = () => {
   return (
-    <section className="partners">
+    <section className="partners" id="servic">
       <Container>
         <ul className="partners__list">
           {[...new Array(10)].map((_, index) => (

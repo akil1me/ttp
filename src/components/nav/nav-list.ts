@@ -25,7 +25,7 @@ export const navList = [
 
   {
     id: 5,
-    title: "Contakt",
-    link: "contakt",
+    title: "Contact",
+    link: "contact",
   },
 ];

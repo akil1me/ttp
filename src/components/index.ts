@@ -5,3 +5,5 @@ export * from "./category";
 export * from "./popular-products";
 export * from "./products-life";
 export * from "./partners";
+export * from "./contacts";
+export * from "./footer";

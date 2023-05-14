@@ -7,7 +7,6 @@ import "./nav.scss";
 
 export const Nav: React.FC = () => {
   const { navRef, isOpen, setIsOpen } = useOutside(false);
-  console.log(isOpen);
 
   return (
     <div className="relative">

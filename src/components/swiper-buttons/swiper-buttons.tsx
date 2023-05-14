@@ -1,7 +1,8 @@
+import { useEffect } from "react";
 import vector from "../../assets/images/vector.png";
 import { useSwiper } from "swiper/react";
 
-type SwiperButtonsProps = {
+export type SwiperButtonsProps = {
   index: number;
 };
 
@@ -15,6 +16,12 @@ export const SwiperButtons: React.FC<SwiperButtonsProps> = ({ index }) => {
       swiper.slideNext();
     }
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(handleNext, 2000);
+
+    return () => clearInterval(intervalId);
+  }, [handleNext]);
 
   return (
     <div className="hero-carulsel__buttons absolute z-10 bottom-11 right-0 left-0 m-auto flex items-center justify-center">

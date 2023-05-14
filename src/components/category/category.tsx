@@ -5,7 +5,7 @@ import { categorys } from "./categorys";
 
 export const Category: React.FC = () => {
   return (
-    <section className="category">
+    <section className="category" id="products">
       <Container>
         <div>
           <h2 className="category__title">Products categoria</h2>

@@ -1,5 +1,13 @@
 import "./app.scss";
-import { AboutUs, Category, Header, Hero } from "./components";
+import {
+  AboutUs,
+  Category,
+  Header,
+  Hero,
+  Partners,
+  PopularProducts,
+  ProdusctsLife,
+} from "./components";
 
 const App = () => {
   return (
@@ -9,6 +17,9 @@ const App = () => {
         <Hero />
         <AboutUs />
         <Category />
+        <PopularProducts />
+        <ProdusctsLife />
+        <Partners />
       </main>
     </>
   );

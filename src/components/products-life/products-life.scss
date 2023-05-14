@@ -1,0 +1,143 @@
+.products-life {
+  margin-bottom: 111px;
+
+  &__title2 {
+    display: none;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+  &__title {
+    margin-bottom: 74px;
+    font-size: 36px;
+    line-height: 36px;
+    text-transform: uppercase;
+  }
+
+  &__img {
+    padding: 40px 33px;
+    width: 710px;
+    height: 480px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url("../../assets/images/life-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__text {
+    max-width: 576px;
+    font-size: 32px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__left-content {
+    margin-right: 20px;
+  }
+}
+
+.products-life__swiper {
+  height: 590px;
+  width: 100%;
+  max-width: 710px;
+
+  &-item {
+    padding: 40px 33px;
+    display: flex;
+    align-items: flex-end;
+    height: 480px;
+    background-image: url("../../assets/images/life-img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &-item:nth-child(even) {
+    background-image: url("../../assets/images/life-trash.png");
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .products-life {
+    &__img {
+      width: 610px;
+    }
+  }
+}
+
+@media only screen and (max-width: 938px) {
+  .products-life {
+    &__title {
+      margin-bottom: 56px;
+    }
+    &__img {
+      width: 460px;
+      height: 300px;
+      padding: 22px 18px;
+    }
+
+    &__text {
+      max-width: 374px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .products-life__swiper {
+    height: 392px;
+
+    &-item {
+      padding: 22px 18px;
+      height: 300px;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .products-life {
+    &__img {
+      width: 100%;
+      max-width: 460px;
+    }
+  }
+}
+
+@media only screen and (max-width: 548px) {
+  .products-life {
+    &__inner {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+    &__left-content {
+      margin-right: 0;
+      margin-left: 10px;
+    }
+    &__title2 {
+      display: block;
+      margin-bottom: 30px;
+    }
+    &__title {
+      font-size: 0;
+      opacity: 0;
+    }
+
+    &__img {
+      max-width: 120px;
+    }
+    &__text {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  .products-life__swiper {
+    width: 290px !important;
+    max-width: auto;
+  }
+}

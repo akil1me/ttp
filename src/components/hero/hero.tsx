@@ -1,19 +1,15 @@
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import pepsi from "../../assets/images/pepsi-logo.png";
 import { Container } from "../container";
 import { LinkButton } from "../link-button";
 
 import "swiper/css";
 import { SwiperButtons } from "../swiper-buttons";
+import { images } from "./hero-images";
 import "./hero.scss";
 
 export const Hero: React.FC = () => {
   const [index, setIndex] = useState<number>(1);
-
-  const slides = Array.from({ length: 8 }).map(
-    (_, index) => `Slide ${index + 1}`
-  );
 
   return (
     <section className="hero" id="home">
@@ -38,13 +34,13 @@ export const Hero: React.FC = () => {
               speed={500}
               onActiveIndexChange={(e) => setIndex(e.realIndex)}
             >
-              {slides.map((slideContent, index) => (
+              {[...images, ...images].map((image, index) => (
                 <SwiperSlide
                   className="hero-carulsel__img"
-                  key={slideContent}
+                  key={index}
                   virtualIndex={index + 1}
                 >
-                  <img src={pepsi} alt="pepsi logo" width={474} height={344} />
+                  <img src={image} alt="pepsi logo" width={474} height={344} />
                 </SwiperSlide>
               ))}
 

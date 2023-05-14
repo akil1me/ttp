@@ -1,6 +1,7 @@
 import { useSwiper } from "swiper/react";
 import "./swiper-products-buttons.scss";
 import { useDynamicWidth } from "../../hooks";
+import { useEffect } from "react";
 
 type SwiperButtonsProps = {
   index: number;
@@ -30,6 +31,12 @@ export const SwiperProductsButtons: React.FC<SwiperButtonsProps> = ({
       swiper.slidePrev();
     }
   };
+
+  useEffect(() => {
+    if (screenSize < 938) {
+      swiper.slideTo(1, 0);
+    }
+  }, [screenSize, swiper]);
 
   return (
     <div className={`swiper-products-buttons ${className}`}>

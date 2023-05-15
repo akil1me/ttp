@@ -56,6 +56,12 @@
   }
 }
 
+@media only screen and (max-width: 548px) {
+  .life-buttons {
+    justify-content: flex-end;
+  }
+}
+
 @media only screen and (max-width: 341px) {
   .life-buttons > button:first-child {
     margin-right: 5px;

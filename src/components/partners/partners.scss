@@ -1,17 +1,15 @@
 .partners {
   margin-bottom: 120px;
-
   &__list {
     @apply grid grid-cols-5 gap-1;
   }
-
   &__item {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 260px;
+    max-width: 300px;
     margin: auto;
     color: white;
     height: 260px;
@@ -19,12 +17,13 @@
     font-size: 36px;
     line-height: 42px;
     text-transform: uppercase;
-    text-align: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
   }
   &__item:first-child::before {
+    max-width: 228px;
+    margin: auto;
     display: block;
     content: "our partners";
   }
@@ -58,6 +57,7 @@
     content: "more";
   }
   &__item:nth-child(even) {
+    max-width: 260px;
     background-color: #fff;
     color: #004cca;
     border-radius: 50%;
@@ -84,6 +84,9 @@
       max-width: 220px;
       height: 220px;
     }
+    &__item:first-child::before {
+      max-width: 179px;
+    }
   }
 }
 
@@ -95,27 +98,54 @@
       @apply grid-cols-2;
       grid-template-areas:
         "item1 item2"
-        "item4 item3"
-        "item5 item6"
-        "item8 item7";
+        "item4 item5"
+        "item3 item8"
+        "item6 item7";
     }
     &__item {
       background-size: contain;
       font-size: 20px;
-      max-width: 150px;
+      line-height: 26px;
+      max-width: 160px;
       height: 150px;
+    }
+    &__item:nth-child(even) {
+      max-width: 150px;
+    }
+    &__item:first-child::before {
+      max-width: 120px;
+    }
+    &__item:nth-child(2) {
+      grid-area: item2;
+      background-size: 86px 51px;
     }
     &__item:nth-child(3) {
       grid-area: item3;
+      background-size: 123px 70px;
     }
     &__item:nth-child(4) {
       grid-area: item4;
+      background-size: 105px 44px;
+    }
+    &__item:nth-child(5) {
+      grid-area: item5;
+      background-size: 95px 57px;
+    }
+    &__item:nth-child(6) {
+      grid-area: item6;
+      background-image: none;
+    }
+    &__item:nth-child(6)::before {
+      display: block;
+      content: "More";
     }
     &__item:nth-child(7) {
       grid-area: item7;
+      background-size: 124px 73px;
     }
     &__item:nth-child(8) {
       grid-area: item8;
+      background-size: 110px 45px;
     }
     &__item:nth-child(9) {
       display: none;

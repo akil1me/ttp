@@ -53,14 +53,15 @@
   }
 
   &__item {
-    width: 345px;
+    width: 100%;
+    max-width: 345px;
     padding: 52px 20px 45px;
     background-color: #20278c;
     margin-bottom: 20px;
 
     @media only screen and (max-width: 548px) {
       padding: 25px 16px 17px;
-      width: 155px;
+      max-width: 155px;
     }
   }
 

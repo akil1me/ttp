@@ -26,7 +26,10 @@ export const Hero: React.FC = () => {
             </p>
           </div>
 
-          <div className="hero__carusel hero-carulsel flex justify-center items-center ">
+          <div
+            data-aos={`zoom-in-up`}
+            className="hero__carusel hero-carulsel flex justify-center items-center"
+          >
             <Swiper
               className="hero-carulsel__swiper static"
               spaceBetween={20}

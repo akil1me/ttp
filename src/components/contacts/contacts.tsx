@@ -12,7 +12,7 @@ export const Contacts: React.FC = () => {
         <h2 className="contacts__title">our contact</h2>
 
         <div className="contacts__inner">
-          <div className="contacts__content" id="contact">
+          <div className="contacts__content" id="contact" data-aos="zoom-in-up">
             <h3 className="contacts__content-title">
               LLC "TOSHKENT PLAST POLIMER"
             </h3>
@@ -22,7 +22,7 @@ export const Contacts: React.FC = () => {
             <Icons icons={icons} />
           </div>
 
-          <div className="contacts__content">
+          <div className="contacts__content" data-aos="zoom-in-up">
             <h3 className="contacts__content-title contacts__content-title2">
               Leave us your suggestions and questions and we will get back to
               you

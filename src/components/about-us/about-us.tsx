@@ -10,9 +10,11 @@ export const AboutUs: React.FC = () => {
       <Container>
         <div>
           <div className="about-us__top">
-            <h2 className="about-us__title">About us</h2>
+            <h2 className="about-us__title" data-aos="zoom-in-up">
+              About us
+            </h2>
 
-            <div className="about-us__info">
+            <div className="about-us__info" data-aos="zoom-in-up">
               <p>
                 Currently, our company manufactures a wide range of plastic
                 boxes for storing and transporting various fruits and
@@ -28,7 +30,7 @@ export const AboutUs: React.FC = () => {
 
           <ul className="about-us__list">
             {aboutUsImages.map((item) => (
-              <li className="about-us__item" key={item.id}>
+              <li className="about-us__item" key={item.id} data-aos="zoom-in">
                 <div className="about-us__img-content">
                   <img
                     className="about-us__img"

@@ -10,7 +10,7 @@ export const ProdusctsLife: React.FC = () => {
     <section className="products-life">
       <Container>
         <h2 className="products-life__title2">Products life</h2>
-        <div className="products-life__inner">
+        <div className="products-life__inner" data-aos="zoom-in-up">
           <div className="products-life__left-content">
             <h2 className="products-life__title">Products life</h2>
             <div className="products-life__img">

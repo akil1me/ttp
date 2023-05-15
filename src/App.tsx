@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./app.scss";
 import {
   AboutUs,
@@ -10,8 +11,12 @@ import {
   PopularProducts,
   ProdusctsLife,
 } from "./components";
+import AOS from "aos";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <Header />

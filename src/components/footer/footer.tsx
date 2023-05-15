@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
     <footer className="footer">
       <Container>
         <div className="footer__inner">
-          <div className="footer__logo">
+          <div className="footer__logo" data-aos="zoom-in-up">
             <img
               className="footer__logo-img"
               src={logo}
@@ -24,7 +24,7 @@ export const Footer: React.FC = () => {
             <p>TOSHKEN PLAST POLIMIR</p>
           </div>
 
-          <div className="footer__right">
+          <div className="footer__right" data-aos="zoom-in-up">
             <div className="footer__nav-content">
               <nav className={`footer__nav nav`}>
                 <ul className={`footer__nav-list nav__list`}>

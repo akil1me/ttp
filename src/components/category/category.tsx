@@ -12,7 +12,11 @@ export const Category: React.FC = () => {
 
           <ul className="category__list">
             {categorys.map((item) => (
-              <li className="category__item" key={item.id}>
+              <li
+                className="category__item"
+                key={item.id}
+                data-aos="zoom-in-up"
+              >
                 <h3 className="category__name">{item.title}</h3>
 
                 <ul className="category__categorys">

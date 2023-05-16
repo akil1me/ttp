@@ -8,7 +8,7 @@ export const ProdusctsLife: React.FC = () => {
   const [index, setIndex] = useState<number>(1);
   return (
     <section className="products-life">
-      <Container>
+      <Container className="products-life__container">
         <h2 className="products-life__title2">Products life</h2>
         <div className="products-life__inner" data-aos="zoom-in-up">
           <div className="products-life__left-content">
@@ -23,7 +23,7 @@ export const ProdusctsLife: React.FC = () => {
           <Swiper
             className="products-life__swiper"
             spaceBetween={20}
-            slidesPerView={"auto"}
+            slidesPerView={1}
             centerInsufficientSlides={true}
             speed={600}
             onActiveIndexChange={(e) => setIndex(e.realIndex)}

@@ -7,11 +7,13 @@ type SwiperButtonsProps = {
   index: number;
   section?: string;
   className?: string;
+  cented?: boolean;
 };
 export const SwiperProductsButtons: React.FC<SwiperButtonsProps> = ({
   index,
   section,
   className,
+  cented,
 }) => {
   const swiper = useSwiper();
   const { screenSize } = useDynamicWidth();
@@ -33,7 +35,7 @@ export const SwiperProductsButtons: React.FC<SwiperButtonsProps> = ({
   };
 
   useEffect(() => {
-    if (screenSize < 938) {
+    if (screenSize < 938 && cented) {
       swiper.slideTo(1, 0);
     }
   }, [screenSize, swiper]);

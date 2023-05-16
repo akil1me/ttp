@@ -68,7 +68,7 @@ export const PopularProducts: React.FC = () => {
             )
           )}
 
-          <SwiperProductsButtons index={index} />
+          <SwiperProductsButtons index={index} cented />
         </Swiper>
       </div>
     </section>

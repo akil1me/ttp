@@ -95,7 +95,8 @@
     margin-bottom: 81px;
 
     &__list {
-      @apply grid-cols-2;
+      @apply grid-cols-2 mx-auto;
+      max-width: 314px;
       grid-template-areas:
         "item1 item2"
         "item4 item5"
